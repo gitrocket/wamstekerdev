@@ -16,3 +16,21 @@ function myFunction(e) {
 
 // source of active class
 // https://jsfiddle.net/uu152uu9/
+
+// smooth scrolling with vanilla JS
+const links = document.querySelectorAll("#navbar1 ul a");
+ 
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+ 
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}

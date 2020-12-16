@@ -8,9 +8,9 @@ body * {
   outline: 1px solid pink;
 } */
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   background-color: #333333;
