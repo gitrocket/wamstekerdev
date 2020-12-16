@@ -71,10 +71,16 @@ body {
 
 #hero-image {
   height: 100vh;
-  background-image: url("images/NYCSTOCK041.JPG");
+  background-image: url("images/NYCSTOCK041v2.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 564px) {
+  #hero-image {
+    background-image: url("images/NYCSTOCK041.JPG");
+  }
 }
 
 /* hero end */
