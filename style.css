@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* 
+body * {
+  outline: 1px solid pink;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #333333;
+}
+
+/* navbar start */
+
+.logo {
+  line-height: 50px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.logo span {
+  color: coral;
+}
+
+#navbar1 {
+  padding: 10px 0px 10px 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+}
+
+#navbar1 ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 50px;
+}
+
+#navbar1 ul li a {
+  text-decoration: none;
+  color: #777777;
+  margin: 10px;
+}
+
+#navbar1 ul li a:hover {
+  color: coral;
+}
+
+#navbar1 ul li {
+  list-style-type: none;
+}
+
+/* navbar end */
+
+/* hero start */
+
+#hero-image {
+  height: 100vh;
+  background-image: url("images/NYCSTOCK041.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* hero end */
+
+/* about section start */
+#first-section {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.text {
+  color: #777777;
+}
+
+.bug {
+  padding: 0px 0px 20px 0px;
+  color: coral;
+}
+
+#about-container {
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 20px;
+}
+/* about section end */
+
+/* skills section start */
+
+#second-section {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#skills-container {
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  color: #777777;
+  text-align: center;
+}
+
+/* skills section end */
+
+/* contact section start */
+
+#third-section {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#contact-form-container {
+  max-width: 400px;
+  color: #777777;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #999999;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  background-color: #999999;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: coral;
+}
+/* contact section end */
+
+/* gitub link start */
+
+#github {
+  color: coral;
+}
+
+.github {
+  text-decoration: none;
+  color: #777777;
+}
+
+/* jQuery and javascript related */
+
+.intro {
+  display: none;
+}
+
+#navbar1 ul li a.active {
+  color: coral;
+}
