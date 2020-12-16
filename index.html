@@ -8,80 +8,82 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main-navbar-container">
-        <nav id="navbar1">
-            <div>
-                <h1 class="logo intro"><a href="#">emile wamsteker <span>web developer</span></a></h1>
+    <div id="top-level-container"></div>
+        <div class="main-navbar-container">
+            <nav id="navbar1">
+                <div>
+                    <h1 class="logo intro"><a href="#">emile wamsteker <span>web developer</span></a></h1>
+                </div>
+                <ul id="btn-container" onclick="myFunction(event)">
+                    <li><a class="btn active" href="#hero-image">home</a></li>
+                    <li><a class="btn" href="#first-section">about</a></li>
+                    <li><a class="btn" href="#second-section">skills</a></li>
+                    <li><a class="btn" href="#third-section">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="hero-image"></div>
+        <section id="first-section">
+            <div id="about-container">
+                <p class="bug">About</p>
+                <p class="text">Emile Wamsteker is a web developer and photographer based in Los Angeles, CA.</p><br>
+                <p class="text">They say necessity is the mother of invention. In 2018, Wamsteker was searching for a way to harvest keyword
+                candidates from text but could not find anything available off-the-shelf. After a little research on the internet, he
+                was introduced to the field of Natural Language Processing, and a computer language called Python. Eventually he learned
+                enough Python to create a keyword harvester. The act of creating something that could be used over and over again,
+                to do heavy lifting, excited him as much as the first time he witnessed the magic of photographic development in the
+                darkroom. In the same way as the proverbial photo bug bites, he was bitten by the code bug.</p>
             </div>
-            <ul id="btn-container" onclick="myFunction(event)">
-                <li><a class="btn active" href="#hero-image">home</a></li>
-                <li><a class="btn" href="#first-section">about</a></li>
-                <li><a class="btn" href="#second-section">skills</a></li>
-                <li><a class="btn" href="#third-section">contact</a></li>
-            </ul>
-        </nav>
+        </section>
+        <section id="second-section">
+            <div id="skills-container">
+                <p class="bug">Skills</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <i class="fab fa-html5 fa-5x"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="card">
+                        <i class="fab fa-css3 fa-5x"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="card">
+                        <i class="fab fa-js fa-5x"></i>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="card">
+                        <i class="fab fa-react fa-5x"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="card">
+                        <i class="fab fa-python fa-5x"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="card">
+                        <a class="github" href="https://www.github.com/gitrocket"><i  id="github" class="fab fa-github fa-5x"></i></a>   
+                        <p>github</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="third-section">
+            <div id="contact-form-container">
+                <p class="bug">Contact</p>
+                <form action="action_page.php">
+                    <label for="fname">First Name</label>
+                    <input class="names" type="text" id="fname" name="firstname" placeholder="">
+                
+                    <label for="lname">Last Name</label>
+                    <input class="names" type="text" id="lname" name="lastname" placeholder="">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder=""></textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
     </div>
-    <div id="hero-image"></div>
-    <section id="first-section">
-        <div id="about-container">
-            <p class="bug">About</p>
-            <p class="text">Emile Wamsteker is a web developer and photographer based in Los Angeles, CA.</p><br>
-            <p class="text">They say necessity is the mother of invention. In 2018, Wamsteker was searching for a way to harvest keyword
-            candidates from text but could not find anything available off-the-shelf. After a little research on the internet, he
-            was introduced to the field of Natural Language Processing, and a computer language called Python. Eventually he learned
-            enough Python to create a keyword harvester. The act of creating something that could be used over and over again,
-            to do heavy lifting, excited him as much as the first time he witnessed the magic of photographic development in the
-            darkroom. In the same way as the proverbial photo bug bites, he was bitten by the code bug.</p>
-        </div>
-    </section>
-    <section id="second-section">
-        <div id="skills-container">
-            <p class="bug">Skills</p>
-            <div class="cards-container">
-                <div class="card">
-                    <i class="fab fa-html5 fa-5x"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-css3 fa-5x"></i>
-                    <p>CSS3</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-js fa-5x"></i>
-                    <p>Javascript</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-react fa-5x"></i>
-                    <p>React</p>
-                </div>
-                <div class="card">
-                    <i class="fab fa-python fa-5x"></i>
-                    <p>Python</p>
-                </div>
-                <div class="card">
-                    <a class="github" href="https://www.github.com/gitrocket"><i  id="github" class="fab fa-github fa-5x"></i></a>   
-                    <p>github</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="third-section">
-        <div id="contact-form-container">
-            <p class="bug">Contact</p>
-            <form action="action_page.php">
-                <label for="fname">First Name</label>
-                <input class="names" type="text" id="fname" name="firstname" placeholder="">
-            
-                <label for="lname">Last Name</label>
-                <input class="names" type="text" id="lname" name="lastname" placeholder="">
-            
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder=""></textarea>
-            
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>
     <script src="js/all.js"></script>
     <script src="js/script.js"></script>
 </body>

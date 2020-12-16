@@ -1,1 +1,1 @@
-This is a single-page personal website for a web developer
+This is a single-page personal website for a web developer.

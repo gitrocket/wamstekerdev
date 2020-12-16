@@ -16,6 +16,10 @@ body {
   background-color: #333333;
 }
 
+#top-level-container {
+  min-width: 360px;
+}
+
 /* navbar start */
 
 .logo {
@@ -71,6 +75,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* hero end */
@@ -117,10 +122,16 @@ body {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
   gap: 20px;
   color: #777777;
   text-align: center;
+}
+
+@media screen and (min-width: 564px) {
+  .cards-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 /* skills section end */
